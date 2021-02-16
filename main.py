@@ -1,16 +1,61 @@
-# This is a sample Python script.
+item = {"title": "Zkus mě chytit", "sold": 4165, "price": 347, "year": 2018}
+print(item["title"])
+print("Kniha " + item["title"] + " stojí " + str(item["price"])+ ".")
+print("Kniha", item["title"], "stojí", item["price"],".")
+print(f"Kniha {item['title']} stojí {item['price']}.")
 
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+item["weight"] = 1
 
+if "weight" in item:
+    print(f"Hmotnost knihy je {item['weight']}.")
+else:
+    print(f"Hmotnost nebyla definována.")
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, I am {name} and I am looking forward to learn something new today.')  # Press ⌘F8 to toggle the breakpoint.
+sausages = {"Jirka": 2, "Naty": 1, "Adam": 4, "Lucka": 5, "Pavča": 3}
+print(len(sausages))
 
+# úkol 1
+finalMarks = {"Ceský jazyk": 1, "Matematika": 1, "Dějepis": 1}
+print(finalMarks)
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('Martina')
+# úkol 2
+sales = {"Zkus mě chytit": 4165, "Vrah zavolá v deset": 5681, "Zločinný steh": 2565}
+sales["Noc, která mě zabila"] = 0
+sales["Vrah zavolá v deset"] = 100
+print(sales)
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# úkol 3
+tombola = {
+    7: "Láhev kvalitního vína Château Headache",
+    15: "Pytel brambor z místního družstva",
+    23: "Čokoládový dort",
+    47: "Kniha o historii města",
+    55: "Šiška salámu",
+    67: "Vyhlídkový let balónem",
+    79: "Moderní televizor",
+    91: "Roční předplatné městského zpravodaje",
+    93: "Společenská hra Sázky a dostihy",
+}
+
+ticket_number = input(f"Jaké je tvé číslo lístku?")
+ticket_number = int(ticket_number)
+if ticket_number in tombola:
+    print(f"Vyhráváš {tombola[ticket_number]}")
+    del tombola[ticket_number]
+    print(tombola)
+else:
+    print(f"Bohužel nevyhráváš nic.")
+
+# úkol 4
+
+passwords = {"Jiří": "tajne-heslo", "Natálie": "jeste-tajnejsi-heslo", "Klára": "nejtajnejsi-heslo"}
+search_key = input(f"Jak se jmenuješ?")
+
+if search_key in passwords.keys():
+    password = input(f"Heslo:")
+    if password in passwords.values():
+        print(f"Vítej")
+    else:
+        print(f"Jdi pryč")
+else:
+    print(f"Nejsi na seznamu.")
