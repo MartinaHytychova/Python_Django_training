@@ -9,13 +9,13 @@ item["weight"] = 1
 if "weight" in item:
     print(f"Hmotnost knihy je {item['weight']}.")
 else:
-    print(f"Hmotnost nebyla definována.")
+    print("Hmotnost nebyla definována.")
 
 sausages = {"Jirka": 2, "Naty": 1, "Adam": 4, "Lucka": 5, "Pavča": 3}
 print(len(sausages))
 
 # úkol 1
-finalMarks = {"Ceský jazyk": 1, "Matematika": 1, "Dějepis": 1}
+finalMarks = {"Český jazyk": 1, "Matematika": 1, "Dějepis": 1}
 print(finalMarks)
 
 # úkol 2
@@ -37,25 +37,24 @@ tombola = {
     93: "Společenská hra Sázky a dostihy",
 }
 
-ticket_number = input(f"Jaké je tvé číslo lístku?")
+ticket_number = input("Jaké je tvé číslo lístku?")
 ticket_number = int(ticket_number)
 if ticket_number in tombola:
     print(f"Vyhráváš {tombola[ticket_number]}")
     del tombola[ticket_number]
     print(tombola)
 else:
-    print(f"Bohužel nevyhráváš nic.")
+    print("Bohužel, nevyhráváš nic.")
 
 # úkol 4
-
 passwords = {"Jiří": "tajne-heslo", "Natálie": "jeste-tajnejsi-heslo", "Klára": "nejtajnejsi-heslo"}
-search_key = input(f"Jak se jmenuješ?")
+search_key = input("Jak se jmenuješ?")
 
 if search_key in passwords.keys():
-    password = input(f"Heslo:")
+    password = input("Heslo:")
     if password in passwords.values():
-        print(f"Vítej")
+        print("Vítej")
     else:
-        print(f"Jdi pryč")
+        print("Jdi pryč")
 else:
-    print(f"Nejsi na seznamu.")
+    print("Nejsi na seznamu.")
