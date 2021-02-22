@@ -7,7 +7,5 @@ available_rooms = {
 
 time = int(input("V kolik hodin si chcete zarezervovat meetingovou místnost?"))
 
-for key, value in available_rooms.items():
-    if time in available_rooms.keys():
-        print(len(available_rooms[time]))
-        break
+if time in available_rooms.keys():
+    print(len(available_rooms[time]))
