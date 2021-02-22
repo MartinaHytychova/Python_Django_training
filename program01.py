@@ -8,7 +8,10 @@ packages = {
 
 package_number = input("Prosím zadejte kód vaší zásilky:")
 
-if package_number in packages:
-    print("Balík byl předán kurýrovi.")
+if package_number in packages.keys():
+    if packages[package_number]:
+        print("Balík byl předán kurýrovi.")
+    else:
+        print("Balík zatím nebyl předán kurýrovi.")
 else:
-    print("Balík zatím nebyl předán kurýrovi.")
+    print("Kód balíku neexistuje.")
