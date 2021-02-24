@@ -493,10 +493,6 @@ countries = [
 user_request = input("Jaký region vás zajímá?")
 
 for country in countries:
-    for value in country.values():
-        if country["region"] == user_request:
-            print(country["name"])
-            break
-        else:
-            print("Neznámý region")
-            break
+    if country["region"] == user_request:
+        print({k["subregion"]: v["population"] for k, v in country})
+        break
