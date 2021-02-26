@@ -15,9 +15,9 @@ sales2020 = {
 
 book = input("Zadejte název knihy:")
 
-if book in sales2019.keys() and book in sales2020.keys():
+if book in sales2019 and book in sales2020:
     print(f"Tato kniha se v roce 2019 a 2020 prodala v počtu: {sales2019[book] + sales2020[book]}")
-elif book in sales2020.keys():
+elif book in sales2020:
     print(f"Tato kniha se v roce 2020 prodala v počtu: {sales2020[book]}")
 else:
     print("Taková kniha není v záznamech")

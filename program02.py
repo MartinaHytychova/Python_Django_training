@@ -9,7 +9,7 @@ warehouse = {
 code = input("Zadejte kód součástky:")
 amount = int(input("Zadejte počet:"))
 
-if code in warehouse.keys():
+if code in warehouse:
     if amount > warehouse[code]:
         print("Lze prodat pouze omezené množství kusů.")
         del warehouse[code]

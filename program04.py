@@ -48,9 +48,9 @@ morseCode = {
 
 user_text = input("Zadejte požadovaný text:")
 
-converted_text = []
 for letter in user_text:
-    user_text = letter.replace(" ", "/")
-    if letter in morseCode.keys():
+    if letter == " ":
+        print("/", end=" ")
+    elif letter in morseCode:
         requested_text = morseCode[letter]
-        print(requested_text)
+        print(requested_text, end=" ")

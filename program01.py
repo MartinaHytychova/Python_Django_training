@@ -8,7 +8,7 @@ packages = {
 
 package_number = input("Prosím zadejte kód vaší zásilky:")
 
-if package_number in packages.keys():
+if package_number in packages:
     if packages[package_number]:
         print("Balík byl předán kurýrovi.")
     else:
