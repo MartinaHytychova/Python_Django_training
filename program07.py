@@ -1,3 +1,6 @@
+import collections
+
+
 countries = [
     {'name': 'Afghanistan', 'capital': 'Kabul', 'region': 'Asia', 'subregion': 'Southern Asia', 'population': 27657145,
      'area': 652230.0, 'gini': 27.8},
@@ -491,8 +494,19 @@ countries = [
 
 
 user_request = input("Jaký region vás zajímá?")
+subregions = {}
+count = 0
 
 for country in countries:
     if country["region"] == user_request:
-        print({k["subregion"]: v["population"] for k, v in country})
-        break
+        count += 1
+        k = country["subregion"]
+        if k not in subregions:
+            subregions[k] = country['population']
+        else:
+            subregions[k] += country['population']
+
+if count > 0:
+    print(subregions)
+else:
+    print("Neznámý region")
