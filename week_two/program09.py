@@ -19,7 +19,15 @@ Dále napiš cyklus, který projde seznam vysledky a pomocí funkce ohodnot_stud
 Následně pro každého studenta vypíše jeho jméno a informaci o tom, zda prospěl, neprospěl či prospěl s vyznamenáním.
 
 """
-exists = False
+
+def ohodnot_studenta(result):
+  if final_mark <= 1.5 and v != 3:
+    print(f"{name}: Prospěl s vyznamenáním")
+  elif (v == 5):
+    print(f"{name}: Neprospěl")
+  elif (final_mark > 1.5 and v != 5):
+    print(f"{name}: Prospěl")
+
 marks = {}
 
 for result in results:
@@ -27,8 +35,7 @@ for result in results:
   marks = result
   name = result["Jméno"]
   result.pop("Jméno")
-  exists = True
   for k, v in marks.items():
     count += v
   final_mark = count / 5
-  print(name, final_mark)
+  ohodnot_studenta(result)
