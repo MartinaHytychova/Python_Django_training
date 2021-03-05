@@ -33,3 +33,11 @@ else:
     print(f"Auto značky {required_car} nelze zapůjčit.")
 
 required_car = input("Zadejte požadovanou značku vozu (Peugeot/Škoda): ")
+if required_car == "Peugeot":
+    print(peugeot.get_info())
+    print(peugeot.rent_car())
+elif required_car == "Škoda":
+    print(skoda.get_info())
+    print(skoda.rent_car())
+else:
+    print(f"Auto značky {required_car} nelze zapůjčit.")
