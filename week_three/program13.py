@@ -19,7 +19,7 @@ class Car:
             return "Auto není možné zapůjčit."
 
     def return_car(self, final_mileage, days):
-        self.final_mileage = final_mileage
+        self.final_mileage = final_mileage + final_mileage
         self.days = days
         self.available = True
 
