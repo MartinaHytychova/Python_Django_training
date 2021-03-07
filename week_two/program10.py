@@ -64,9 +64,9 @@ def get_chance(industry, turnover, country, conference=False, newsletter=False):
         if newsletter:
             count += 1
       
-    if count in {6, 7, 8}:
+    if count in [6, 7, 8]:
         chance = "střední"
-    elif count in {9, 10}:
+    elif count in [9, 10]:
         chance = "vysoká"
     else:
         chance = "nízká"

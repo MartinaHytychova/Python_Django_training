@@ -20,12 +20,12 @@ Následně pro každého studenta vypíše jeho jméno a informaci o tom, zda pr
 
 """
 
-def ohodnot_studenta(result):
-  if final_mark <= 1.5 and v != 3:
+def rate_student(result, worst_mark):
+  if final_mark <= 1.5 and worst_mark != 3:
     print(f"{name}: Prospěl s vyznamenáním")
-  elif (v == 5):
+  elif (worst_mark == 5):
     print(f"{name}: Neprospěl")
-  elif (final_mark > 1.5 and v != 5):
+  else:
     print(f"{name}: Prospěl")
 
 marks = {}
@@ -35,7 +35,11 @@ for result in results:
   marks = result
   name = result["Jméno"]
   result.pop("Jméno")
+  worst_mark = 0
+
   for k, v in marks.items():
     count += v
-  final_mark = count / 5
-  ohodnot_studenta(result)
+    if v > worst_mark:
+      worst_mark = v
+      final_mark = count / 5
+  rate_student(result, worst_mark)

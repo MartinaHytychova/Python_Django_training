@@ -5,7 +5,7 @@ requested_number = input("Zadejte telefonní číslo, kam chcete zprávu poslat:
 
 def check_message_length(text):
     number = len(text) / 180
-    amount = 3 * math.floor(number)
+    amount = 3 * math.ceil(number)
     print(f"Za sms zaplatíte{amount} Kč.")
 
 
