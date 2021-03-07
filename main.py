@@ -143,3 +143,54 @@ if mark == 5:
   mark = getMark(points)
 print(f"Výsledná známka je {mark}.")
 
+from datetime import datetime,timedelta
+datetime.now()
+datetime.datetime(2021, 3, 2, 20, 7, 19, 770468)
+apollo_start = datetime(1969, 7, 16, 14, 32)
+print(apollo_start)
+1969-07-16 14:32:00
+apollo_start.weekday()
+2
+apollo_start.isoweekday()
+3
+apollo_start.isoformat()
+'1969-07-16T14:32:00'
+apollo_start.strftime("%d, %m, %Y, %H, %M")
+'16, 07, 1969, 14, 32'
+apollo_start.strftime("%d. %m. %Y, %H:%M")
+'16. 07. 1969, 14:32'
+apollo_start.strftime("%d. %m. %Y, %H:%M hod")
+'16. 07. 1969, 14:32 hod'
+apollo_pristani = datetime.strptime("21. 7. 1969, 18:54", "%d. %m. %Y, %H:%M hod")
+apollo_pristani = datetime.strptime("21. 7. 1969, 18:54", "%d. %m. %Y, %H:%M")
+delka_mise = apollo_pristani - apollo_start
+print(delka_mise)
+5 days, 4:22:00
+
+
+"""
+
+ Převod času
+V proměnné apolloStart máme uložený datum a čas startu Apolla 11. 
+Vypiš datum na obrazovku ve formátu, na který jsou zvyklí Američané, 
+tj. na první místo napiš měsíc, dále den a nakonec rok, jako oddělovače použij lomítka. 
+Čas vypisovat nemusíš.
+
+apollo_start.strftime("%m/%d/%Y, %I:M% %p")
+
+
+¶ Čas od startu
+Satelit Solar Orbiter, který má za cíl pozorování Slunce, odstartoval 10. února 2020 v 5:03. 
+Ulož si hodnotu startu do proměnné.
+
+Který den v týdnu Solar Orbiter odstartoval?
+Spočítej, kolik času od jeho startu uplynulo.
+
+
+¶ Doprava večeře
+Zákazník si objednal večeři na webu dovážkové služby 13. listopadu 2020 v 19:47. 
+Víme, že převzetí objednávky restaurací v průměru trvá 8 minut a 35 sekund, 
+příprava jídla trvá 30 minut a doprava jídla k zákazníkovi 25 minut a 30 sekund. 
+Kdy očekáváme, že jídlo dorazí zákazníkovi?
+
+"""
