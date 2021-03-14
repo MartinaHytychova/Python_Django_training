@@ -10,10 +10,10 @@ first_end = datetime(2021, 8, 10)
 second_start = datetime(2021, 8, 11)
 second_end = datetime(2021, 8, 31)
 
-if converted_date >= first_start or converted_date <= first_end:
+if converted_date >= first_start and converted_date <= first_end:
     final_price = 250 * number
     print(f"Máme otevřeno a cena vstupenky činí: {final_price}.")
-elif converted_date >= second_start or converted_date <= second_end:
+elif converted_date >= second_start and converted_date <= second_end:
     final_price = 180 * number
     print(f"Máme otevřeno a cena vstupenky činí: {final_price}.")
 else:

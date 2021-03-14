@@ -7,4 +7,4 @@ class Car:
 
 peugeot = Car("4A2 3020", "Peugeot 403 Cabrio", 47534)
 skoda = Car("1P3 4747", "Škoda Octavia", 41253)
-citroen = Car("2S3 233", "Citroen Xsara", 3452)
+citroen = Car("2S3 2335", "Citroen Xsara", 3452)

@@ -12,8 +12,6 @@ class Employee:
 
     def get_tax(self):
         tax = self.wage * 0.15 - self.children * 1500
-        if tax < 0:
-            return 0
         return tax
 
     def get_net_salary(self):

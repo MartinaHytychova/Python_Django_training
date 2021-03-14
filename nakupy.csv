@@ -1,0 +1,90 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Jméno</th>
+      <th>Datum</th>
+      <th>Věc</th>
+      <th>Částka v korunách</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Petr</td>
+      <td>2020-02-05</td>
+      <td>Prací prášek</td>
+      <td>399</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Ondra</td>
+      <td>2020-02-08</td>
+      <td>Savo</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Petr</td>
+      <td>2020-02-24</td>
+      <td>Toaletní papír</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Libor</td>
+      <td>2020-03-05</td>
+      <td>Pivo</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Petr</td>
+      <td>2020-03-18</td>
+      <td>Pytel na odpadky</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Míša</td>
+      <td>2020-03-30</td>
+      <td>Utěrky na nádobí</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Ondra</td>
+      <td>2020-04-22</td>
+      <td>Toaletní papír</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Míša</td>
+      <td>2020-05-05</td>
+      <td>Pečící papír</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Zuzka</td>
+      <td>2020-06-05</td>
+      <td>Savo</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Pavla</td>
+      <td>2020-06-13</td>
+      <td>Máslo</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Ondra</td>
+      <td>2020-07-25</td>
+      <td>Káva</td>
+      <td>300</td>
+    </tr>
+  </tbody>
+</table>
