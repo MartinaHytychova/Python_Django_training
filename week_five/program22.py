@@ -17,18 +17,14 @@ for col in death_char.columns:
     print(col)
 
 # Použij funkci loc ke zjištění informací o smrti postavy jménem "Hali".
-hali = death_char.loc['Hali']
-print(hali)
+print(death_char.loc['Hali'])
 
 # Použij funkci loc k zobrazení řádků mezi "Gevin Harlaw" a "Gillam".
-range = death_char.loc['Gevin Harlaw':'Gillam']
-print(range)
+print(death_char.loc['Gevin Harlaw':'Gillam'])
 
 # Použij funkci loc k zobrazení řádků mezi "Gevin Harlaw" a "Gillam" a sloupce Death Year.
-death_range = death_char.loc['Gevin Harlaw':'Gillam', 'Death Year']
-print(death_range)
+print(death_char.loc['Gevin Harlaw':'Gillam', 'Death Year'])
 
 # Použij funkci loc k zobrazení řádků mezi "Gevin Harlaw" a "Gillam" a informace o tom, v jakých knihách se postava vyskytuje,
 # tj. vypiš všechny sloupce mezi GoT a DwD.
-book_range = death_char.loc['Gevin Harlaw':'Gillam', 'GoT':]
-print(book_range)
+print(death_char.loc['Gevin Harlaw':'Gillam', 'GoT':])

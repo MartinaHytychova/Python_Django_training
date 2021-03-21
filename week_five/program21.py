@@ -41,5 +41,4 @@ Z těchto hodnot zjistíš maximální rozsah obchodní ceny akcie, což je zák
 price = twilio.iloc[0:, 3].values[0:]
 maximum = price.max()
 minimum = price.min()
-price_range = maximum - minimum
-print(f" Maximální rozsah cen akcie za období 2020 byl {price_range} CZK")
+print(f" Maximální rozsah cen akcie za období 2020 byl {maximum - minimum} CZK")
