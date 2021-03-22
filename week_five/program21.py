@@ -1,10 +1,10 @@
 import requests
+import pandas
 
 url = 'https://raw.githubusercontent.com/pesikj/python-012021/master/zadani/5/twlo.csv'
 r = requests.get(url, allow_redirects=True, verify=False)
 open('twlo.csv', 'wb').write(r.content)
 
-import pandas
 twilio = pandas.read_csv("twlo.csv")
 
 # Zjisti, kolik má soubor řádek a kolik sloupců.

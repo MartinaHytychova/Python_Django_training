@@ -1,10 +1,10 @@
 import requests
+import pandas
 
 url = 'https://raw.githubusercontent.com/pesikj/python-012021/master/zadani/5/country_vaccinations.csv'
 r = requests.get(url, allow_redirects=True, verify=False)
 open('country_vaccinations.csv', 'wb').write(r.content)
 
-import pandas
 data = pandas.read_csv("country_vaccinations.csv")
 
 col = ['country', 'total_vaccinations']
