@@ -33,7 +33,7 @@ employees.to_csv("vsichni_zamci.csv", index="cislo_zamestnance")
 
 # Ze souboru platy_2021_02.csv načti platy zaměstnanců za únor 2021.
 # Propoj tabulku (operace join) s platy a tabulku se zaměstnanci pomocí sloupce cislo_zamestnance.
-february_salaries = pandas.merge(employees, salaries, how='outer', on=['cislo_zamestnance'])
+february_salaries = pandas.merge(employees, salaries, how="left", on=["cislo_zamestnance"])
 print(february_salaries.head(), "\n")
 
 # Porovnej rozměry tabulek před spojením a po spojení.

@@ -14,9 +14,15 @@ reports = reports.set_index("cislo_zamestnance")
 print(reports.head(), "\n")
 
 # Proveď agregaci a zjisti celkový počet vykázaných hodin za jednotlivé projekty.
-print("Vykázané hodiny: ", reports.groupby("projekt")["hodiny"].sum(), "\n")
+print("Vykázané hodiny: \n", reports.groupby("projekt")["hodiny"].sum(), "\n")
 
 # Propoj tabulku s výkazy s tabulkou se zaměstnanci, kterou jsi vytvořil(a) v předchozím cvičení.
 # Následně proveď statistiku vykázaných hodin za jednotlivé kanceláře,
 # tj. spočítej celkový počet hodin vykázaný zaměstnanci jednotlivých kanceláří na projekty daného zákazníka.
+reports_employees = pandas.merge(reports, employees, how="left", on="cislo_zamestnance")
+print(reports_employees, "\n")
 
+hours_per_office = reports_employees.groupby(["projekt", "mesto"])["hodiny"].sum()
+hours_per_project = reports_employees.groupby(["mesto", "projekt"])["hodiny"].sum()
+print("Celkem vykázáno hodin na projektu za kancl: \n", hours_per_office, "\n")
+print("Celkem vykázáno hodin na kanclu za projekt: \n", hours_per_project, "\n")
