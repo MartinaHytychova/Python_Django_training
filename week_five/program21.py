@@ -15,7 +15,7 @@ print(twilio.iloc[:5])
 print(twilio.head(n=5))
 
 # U akcií nás zajímají především nejnovější ceny. Podívej se na poslední řádek souboru.
-print(f"Aktuální cena akcie je: twilio.tail(1).")
+print(f"Aktuální cena akcie je: {twilio.tail(1)}.")
 
 # Počet řádků ulož do proměnné pocet_radku jako číslo.
 number_rows = len(twilio.index)
@@ -41,4 +41,4 @@ Z těchto hodnot zjistíš maximální rozsah obchodní ceny akcie, což je zák
 price = twilio.iloc[0:, 3].values[0:]
 maximum = price.max()
 minimum = price.min()
-print(f" Maximální rozsah cen akcie za období 2020 byl {maximum - minimum} CZK")
+print(f" Maximální rozsah cen akcie za období 2020 byl {maximum - minimum} USD")

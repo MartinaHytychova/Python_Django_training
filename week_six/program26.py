@@ -22,8 +22,6 @@ open('platy_2021_02.csv', 'wb').write(s.content)
 salaries = pandas.read_csv("platy_2021_02.csv")
 
 # Načti data o zaměstnancích z CSV souborů do tabulek (DataFrame).
-
-
 # Ke každé tabulce přidej nový sloupec mesto, které bude obsahovat informaci o tom, ve kterém městě zaměstnanec pracuje.
 prague["mesto"] = "Praha"
 pilsen["mesto"] = "Plzeň"

@@ -8,7 +8,7 @@ open('character_deaths.csv', 'wb').write(r.content)
 data = pandas.read_csv("character_deaths.csv")
 
 # Načti soubor do tabulky (DataFrame) a nastav sloupec Name jako index
-death_char = pandas.DataFrame(data=data).set_index('Name')
+death_char = data.set_index('Name')
 print(death_char)
 
 # Zobraz si sloupce, které tabulka má.
