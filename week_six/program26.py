@@ -29,27 +29,28 @@ liberec["mesto"] = "Liberec"
 
 # Vytvoř novou tabulku zamestnanci a ulož do ní informace o všech zaměstnancích.
 employees = pandas.concat([prague, pilsen, liberec], ignore_index=True)
+employees.to_csv("vsichni_zamci.csv", index="cislo_zamestnance")
 
 # Ze souboru platy_2021_02.csv načti platy zaměstnanců za únor 2021.
 # Propoj tabulku (operace join) s platy a tabulku se zaměstnanci pomocí sloupce cislo_zamestnance.
 february_salaries = pandas.merge(employees, salaries, how='outer', on=['cislo_zamestnance'])
-print(february_salaries.head())
+print(february_salaries.head(), "\n")
 
 # Porovnej rozměry tabulek před spojením a po spojení.
 # Pokud nemá některý zaměstnanec plat za únor, znamená to, že v naší firmě již nepracuje.
 print(salaries.shape)
 print(february_salaries.shape)
-print(salaries.shape < february_salaries.shape) #True
+print(salaries.shape < february_salaries.shape, "\n") #True
 # rozdíl 13 platů v únorových mzdách znamená, že ve firmě již 13 zamců nepracuje
 
 # Spočti průměrný plat zaměstnanců v jednotlivých kancelářích.
-print(february_salaries.groupby("mesto")["plat"].mean())
+print("Průměrný plat zamců v kanclech: ", february_salaries.groupby("mesto")["plat"].mean(), "\n")
 
 # BONUS
 # Ulož do proměnné počet zaměstnanců, kteří v naší firmě již nepracují.
 unemployed = february_salaries[february_salaries["plat"].isnull()]
 unemployed_number = unemployed.shape[0]
-print(f"Celkem nezaměstnaných v únoru: {unemployed_number}.")
+print(f"Celkem nezaměstnaných v únoru: {unemployed_number}.\n")
 
 
 # V rámci úspory se IT oddělení rozhodlo prověřit licence přidělené zaměstnancům, kteří ve firmě již nepracují.
