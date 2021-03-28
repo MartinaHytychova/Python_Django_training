@@ -8,6 +8,7 @@ open('temperature.csv', 'wb').write(r.content)
 
 data = pandas.read_csv("temperature.csv")
 data["AvgTemperatureCelsia"] = pytemperature.f2c(data["AvgTemperature"])
+data.to_csv("temperature_celsia.csv", index=False)
 
 # Vypiš si prvních několik řádků, ať si prohlédneš strukturu tabulky. Dále napiš následující dotazy:
 print(data.head(n=20), "\n")
