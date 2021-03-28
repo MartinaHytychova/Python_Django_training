@@ -23,7 +23,11 @@ print("Vykázané hodiny: \n", reports.groupby("projekt")["hodiny"].sum(), "\n")
 reports_employees = pandas.merge(reports, employees, how="left", on="cislo_zamestnance")
 print(reports_employees, "\n")
 
+# pro ukol 30
+reports_employees.to_csv("zamci_vykazy.csv", index=False)
+
 hours_per_office = reports_employees.groupby(["projekt", "mesto"])["hodiny"].sum()
 hours_per_project = reports_employees.groupby(["mesto", "projekt"])["hodiny"].sum()
 print("Celkem vykázáno hodin na projektu za kancl: \n", hours_per_office, "\n")
 print("Celkem vykázáno hodin na kanclu za projekt: \n", hours_per_project, "\n")
+

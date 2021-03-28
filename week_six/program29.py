@@ -1,6 +1,4 @@
-import requests
 import pandas
-import pytemperature
 
 temperature = pandas.read_csv("temperature_celsia.csv")
 print(temperature.head(), "\n")
