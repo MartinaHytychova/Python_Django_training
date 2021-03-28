@@ -13,6 +13,7 @@ reports = reports.rename(columns={"date": "datum", "hours": "hodiny", "project":
 reports = reports.set_index("cislo_zamestnance")
 print(reports.head(), "\n")
 
+# BONUS
 # Proveď agregaci a zjisti celkový počet vykázaných hodin za jednotlivé projekty.
 print("Vykázané hodiny: \n", reports.groupby("projekt")["hodiny"].sum(), "\n")
 
