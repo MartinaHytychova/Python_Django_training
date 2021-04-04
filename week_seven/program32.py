@@ -7,7 +7,8 @@ s = requests.get(url, allow_redirects=True)
 open('platy.csv', 'wb').write(s.content)
 salaries = pandas.read_csv("platy.csv")
 
+salaries = salaries["plat"]
 salaries.hist(bins=[
-  150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 200, 205, 210
+  30000, 32500, 35000, 37500, 40000, 42500, 45000, 47500, 50000, 52500, 55000, 57500, 60000
 ])
 plt.show()
