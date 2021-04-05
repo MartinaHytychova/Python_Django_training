@@ -2,22 +2,31 @@ import pandas
 import matplotlib.pyplot as plt
 
 temperature = pandas.read_csv("temperature_celsia.csv")
-print(temperature.head(), "\n")
 
 # Vytvoř tabulku, která bude obsahovat údaje o teplotě za města Helsinki, Miami Beach a Tokyo.
-celsia = ['Region', 'City', 'AvgTemperatureCelsia']
-helsinki = temperature[(temperature['City'] == 'Helsinki')][celsia]
-miami_beach = temperature[(temperature['City'] == 'Miami Beach')][celsia]
-tokyo = temperature[(temperature['City'] == 'Tokyo')][celsia]
+
+helsinki = temperature[temperature['City'] == 'Helsinki']
+miami_beach = temperature[temperature['City'] == 'Miami Beach']
+tokyo = temperature[temperature['City'] == 'Tokyo']
 
 temperature_new = pandas.concat([helsinki, miami_beach, tokyo], ignore_index=True)
 temperature_new.to_csv("teploty_nove.csv", index="City")
-print(temperature_new)
 
 # Vytvoř krabicový graf a porovnej rozsah teplot v těchto městech.
 
-data = temperature_new['AvgTemperatureCelsia'].to_frame(name='Helsinki')
-data['Miami Beach'] = temperature_new['AvgTemperatureCelsia']
-data['Tokyo'] = temperature_new['AvgTemperatureCelsia']
+data = helsinki['AvgTemperatureCelsia'].to_frame(name='Helsinki')
+data.reset_index(drop=True, inplace=True)
+
+miami_beach = miami_beach['AvgTemperatureCelsia']
+miami_beach.reset_index(drop=True, inplace=True)
+data['Miami Beach'] = miami_beach
+
+tokyo = tokyo['AvgTemperatureCelsia']
+tokyo.reset_index(drop=True, inplace=True)
+data['Tokyo'] = tokyo
+
+print(data)
+
 data.plot(kind='box', whis=[0, 100])
 plt.show()
+

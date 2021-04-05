@@ -15,11 +15,11 @@ date = easter_data['Datum']
 count = easter_data['Počet']
 
 plt.plot(date, count)
-ax = easter_data.plot()
-ax.set_ylabel("Kolikrát Velikonoc")
-ax.set_xlabel("Datum")
-ax.set_title("Velikonoce")
-plt.show()
+ax = easter_data.plot(x='Datum', kind='bar')
+ax.set_ylabel("Počet Velikonoc")
+ax.set_xlabel("Dny")
+ax.set_title("Velikonoce mezi lety 1600 - 2100")
+# plt.show()
 
 # BONUS
 
@@ -30,10 +30,13 @@ plt.show()
 from dateutil import easter
 
 data = []
-for rok in # sem doplň funkci range
-  datum = easter.easter(rok)
-  # Naformátuj datum jako řetězec tak, aby obsahovalo jen měsíc a den. Měsíc dej na začátek a za něj den - použij funkci strftime, kterou jsme spolu probírali
-  # Naformátovaný datum ulož do seznamu data
+for rok in range(1600, 2100):
+    datum = easter.easter(rok)
+    # Naformátuj datum jako řetězec tak, aby obsahovalo jen měsíc a den.
+    # Měsíc dej na začátek a za něj den - použij funkci strftime, kterou jsme spolu probírali
+    datum = datum.strftime("%m-%d")
+    data += [datum]
 
 data = pandas.DataFrame(data, columns=["Datum"])
 data = data.groupby("Datum").size()
+print(data)

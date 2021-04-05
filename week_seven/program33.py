@@ -1,7 +1,6 @@
 import requests
 import pandas
 import matplotlib.pyplot as plt
-from pandas import DataFrame
 
 url = "https://raw.githubusercontent.com/pesikj/python-012021/master/zadani/5/twlo.csv"
 s = requests.get(url, allow_redirects=True)
@@ -26,10 +25,10 @@ plt.plot(date, close_price)
 # na ose x nyní vidíme přehledně datum s rozestupem 2 měsíců
 
 #BONUS
-ax = stocks.plot()
+ax = stocks.plot(x="Date", y="Close")
 ax.set_ylabel("Cena v dolarech")
-ax.set_xlabel("Číslo/Index")
-ax.set_title("Ceny akcií")
+ax.set_xlabel("Období")
+ax.set_title("Ceny akcií firmy Twilio")
 plt.show()
 
 

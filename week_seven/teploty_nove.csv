@@ -1,91 +1,91 @@
-,Region,City,AvgTemperatureCelsia
-0,Europe,Helsinki,-1.33
-1,Europe,Helsinki,-1.39
-2,Europe,Helsinki,1.72
-3,Europe,Helsinki,6.94
-4,Europe,Helsinki,7.5
-5,Europe,Helsinki,6.56
-6,Europe,Helsinki,2.22
-7,Europe,Helsinki,3.67
-8,Europe,Helsinki,5.78
-9,Europe,Helsinki,6.11
-10,Europe,Helsinki,4.72
-11,Europe,Helsinki,2.06
-12,Europe,Helsinki,1.44
-13,Europe,Helsinki,0.61
-14,Europe,Helsinki,1.33
-15,Europe,Helsinki,2.28
-16,Europe,Helsinki,4.78
-17,Europe,Helsinki,4.33
-18,Europe,Helsinki,2.89
-19,Europe,Helsinki,0.56
-20,Europe,Helsinki,0.22
-21,Europe,Helsinki,0.17
-22,Europe,Helsinki,0.83
-23,Europe,Helsinki,5.5
-24,Europe,Helsinki,2.22
-25,Europe,Helsinki,1.06
-26,Europe,Helsinki,3.78
-27,Europe,Helsinki,2.78
-28,Europe,Helsinki,1.83
-29,Europe,Helsinki,2.06
-30,North America,Miami Beach,23.67
-31,North America,Miami Beach,24.89
-32,North America,Miami Beach,25.22
-33,North America,Miami Beach,25.22
-34,North America,Miami Beach,25.11
-35,North America,Miami Beach,25.89
-36,North America,Miami Beach,26.0
-37,North America,Miami Beach,26.11
-38,North America,Miami Beach,26.67
-39,North America,Miami Beach,26.78
-40,North America,Miami Beach,26.17
-41,North America,Miami Beach,27.11
-42,North America,Miami Beach,26.22
-43,North America,Miami Beach,26.5
-44,North America,Miami Beach,24.11
-45,North America,Miami Beach,23.89
-46,North America,Miami Beach,23.22
-47,North America,Miami Beach,23.94
-48,North America,Miami Beach,24.0
-49,North America,Miami Beach,23.61
-50,North America,Miami Beach,23.56
-51,North America,Miami Beach,25.17
-52,North America,Miami Beach,25.22
-53,North America,Miami Beach,24.39
-54,North America,Miami Beach,22.28
-55,North America,Miami Beach,23.06
-56,North America,Miami Beach,22.83
-57,North America,Miami Beach,25.28
-58,North America,Miami Beach,25.39
-59,North America,Miami Beach,25.56
-60,Asia,Tokyo,15.06
-61,Asia,Tokyo,16.83
-62,Asia,Tokyo,17.83
-63,Asia,Tokyo,15.33
-64,Asia,Tokyo,13.89
-65,Asia,Tokyo,15.78
-66,Asia,Tokyo,17.78
-67,Asia,Tokyo,16.94
-68,Asia,Tokyo,15.0
-69,Asia,Tokyo,16.72
-70,Asia,Tokyo,15.28
-71,Asia,Tokyo,12.83
-72,Asia,Tokyo,13.78
-73,Asia,Tokyo,13.44
-74,Asia,Tokyo,13.72
-75,Asia,Tokyo,12.06
-76,Asia,Tokyo,11.72
-77,Asia,Tokyo,11.94
-78,Asia,Tokyo,9.39
-79,Asia,Tokyo,8.11
-80,Asia,Tokyo,9.0
-81,Asia,Tokyo,9.28
-82,Asia,Tokyo,11.89
-83,Asia,Tokyo,10.17
-84,Asia,Tokyo,10.28
-85,Asia,Tokyo,14.89
-86,Asia,Tokyo,12.11
-87,Asia,Tokyo,12.11
-88,Asia,Tokyo,14.67
-89,Asia,Tokyo,10.83
+,Unnamed: 0,Region,Country,City,Day,AvgTemperature,AvgTemperatureCelsia
+0,2160,Europe,Finland,Helsinki,1,29.6,-1.33
+1,2161,Europe,Finland,Helsinki,2,29.5,-1.39
+2,2162,Europe,Finland,Helsinki,3,35.1,1.72
+3,2163,Europe,Finland,Helsinki,4,44.5,6.94
+4,2164,Europe,Finland,Helsinki,5,45.5,7.5
+5,2165,Europe,Finland,Helsinki,6,43.8,6.56
+6,2166,Europe,Finland,Helsinki,7,36.0,2.22
+7,2167,Europe,Finland,Helsinki,8,38.6,3.67
+8,2168,Europe,Finland,Helsinki,9,42.4,5.78
+9,2169,Europe,Finland,Helsinki,10,43.0,6.11
+10,2170,Europe,Finland,Helsinki,11,40.5,4.72
+11,2171,Europe,Finland,Helsinki,12,35.7,2.06
+12,2172,Europe,Finland,Helsinki,13,34.6,1.44
+13,2173,Europe,Finland,Helsinki,14,33.1,0.61
+14,2174,Europe,Finland,Helsinki,15,34.4,1.33
+15,2175,Europe,Finland,Helsinki,16,36.1,2.28
+16,2176,Europe,Finland,Helsinki,17,40.6,4.78
+17,2177,Europe,Finland,Helsinki,18,39.8,4.33
+18,2178,Europe,Finland,Helsinki,19,37.2,2.89
+19,2179,Europe,Finland,Helsinki,20,33.0,0.56
+20,2180,Europe,Finland,Helsinki,21,32.4,0.22
+21,2181,Europe,Finland,Helsinki,22,32.3,0.17
+22,2182,Europe,Finland,Helsinki,23,33.5,0.83
+23,2183,Europe,Finland,Helsinki,24,41.9,5.5
+24,2184,Europe,Finland,Helsinki,25,36.0,2.22
+25,2185,Europe,Finland,Helsinki,26,33.9,1.06
+26,2186,Europe,Finland,Helsinki,27,38.8,3.78
+27,2187,Europe,Finland,Helsinki,28,37.0,2.78
+28,2188,Europe,Finland,Helsinki,29,35.3,1.83
+29,2189,Europe,Finland,Helsinki,30,35.7,2.06
+30,5010,North America,US,Miami Beach,1,74.6,23.67
+31,5011,North America,US,Miami Beach,2,76.8,24.89
+32,5012,North America,US,Miami Beach,3,77.4,25.22
+33,5013,North America,US,Miami Beach,4,77.4,25.22
+34,5014,North America,US,Miami Beach,5,77.2,25.11
+35,5015,North America,US,Miami Beach,6,78.6,25.89
+36,5016,North America,US,Miami Beach,7,78.8,26.0
+37,5017,North America,US,Miami Beach,8,79.0,26.11
+38,5018,North America,US,Miami Beach,9,80.0,26.67
+39,5019,North America,US,Miami Beach,10,80.2,26.78
+40,5020,North America,US,Miami Beach,11,79.1,26.17
+41,5021,North America,US,Miami Beach,12,80.8,27.11
+42,5022,North America,US,Miami Beach,13,79.2,26.22
+43,5023,North America,US,Miami Beach,14,79.7,26.5
+44,5024,North America,US,Miami Beach,15,75.4,24.11
+45,5025,North America,US,Miami Beach,16,75.0,23.89
+46,5026,North America,US,Miami Beach,17,73.8,23.22
+47,5027,North America,US,Miami Beach,18,75.1,23.94
+48,5028,North America,US,Miami Beach,19,75.2,24.0
+49,5029,North America,US,Miami Beach,20,74.5,23.61
+50,5030,North America,US,Miami Beach,21,74.4,23.56
+51,5031,North America,US,Miami Beach,22,77.3,25.17
+52,5032,North America,US,Miami Beach,23,77.4,25.22
+53,5033,North America,US,Miami Beach,24,75.9,24.39
+54,5034,North America,US,Miami Beach,25,72.1,22.28
+55,5035,North America,US,Miami Beach,26,73.5,23.06
+56,5036,North America,US,Miami Beach,27,73.1,22.83
+57,5037,North America,US,Miami Beach,28,77.5,25.28
+58,5038,North America,US,Miami Beach,29,77.7,25.39
+59,5039,North America,US,Miami Beach,30,78.0,25.56
+60,1140,Asia,Japan,Tokyo,1,59.1,15.06
+61,1141,Asia,Japan,Tokyo,2,62.3,16.83
+62,1142,Asia,Japan,Tokyo,3,64.1,17.83
+63,1143,Asia,Japan,Tokyo,4,59.6,15.33
+64,1144,Asia,Japan,Tokyo,5,57.0,13.89
+65,1145,Asia,Japan,Tokyo,6,60.4,15.78
+66,1146,Asia,Japan,Tokyo,7,64.0,17.78
+67,1147,Asia,Japan,Tokyo,8,62.5,16.94
+68,1148,Asia,Japan,Tokyo,9,59.0,15.0
+69,1149,Asia,Japan,Tokyo,10,62.1,16.72
+70,1150,Asia,Japan,Tokyo,11,59.5,15.28
+71,1151,Asia,Japan,Tokyo,12,55.1,12.83
+72,1152,Asia,Japan,Tokyo,13,56.8,13.78
+73,1153,Asia,Japan,Tokyo,14,56.2,13.44
+74,1154,Asia,Japan,Tokyo,15,56.7,13.72
+75,1155,Asia,Japan,Tokyo,16,53.7,12.06
+76,1156,Asia,Japan,Tokyo,17,53.1,11.72
+77,1157,Asia,Japan,Tokyo,18,53.5,11.94
+78,1158,Asia,Japan,Tokyo,19,48.9,9.39
+79,1159,Asia,Japan,Tokyo,20,46.6,8.11
+80,1160,Asia,Japan,Tokyo,21,48.2,9.0
+81,1161,Asia,Japan,Tokyo,22,48.7,9.28
+82,1162,Asia,Japan,Tokyo,23,53.4,11.89
+83,1163,Asia,Japan,Tokyo,24,50.3,10.17
+84,1164,Asia,Japan,Tokyo,25,50.5,10.28
+85,1165,Asia,Japan,Tokyo,26,58.8,14.89
+86,1166,Asia,Japan,Tokyo,27,53.8,12.11
+87,1167,Asia,Japan,Tokyo,28,53.8,12.11
+88,1168,Asia,Japan,Tokyo,29,58.4,14.67
+89,1169,Asia,Japan,Tokyo,30,51.5,10.83

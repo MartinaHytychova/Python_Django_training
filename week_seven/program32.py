@@ -6,7 +6,7 @@ from pandas import DataFrame
 url = "https://raw.githubusercontent.com/pesikj/python-012021/master/zadani/6/platy_2021_02.csv"
 s = requests.get(url, allow_redirects=True)
 open('platy.csv', 'wb').write(s.content)
-salaries = pandas.read_csv("platy.csv")
+salaries = pandas.read_csv("platy.csv", index_col='cislo_zamestnance')
 
 salaries = salaries["plat"]
 salaries.hist(bins=[
