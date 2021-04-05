@@ -21,3 +21,19 @@ ax.set_xlabel("Datum")
 ax.set_title("Velikonoce")
 plt.show()
 
+# BONUS
+
+# Vytvoř si datový soubor sama.
+# Můžeš k tomu využít modul dateutil, který při instalaci najdeš pod jménem python-dateutil.
+# Následně si zkopíruj kód níže a doplň na místo komentářů příkazy, které prováději požadovanou činnost.
+
+from dateutil import easter
+
+data = []
+for rok in # sem doplň funkci range
+  datum = easter.easter(rok)
+  # Naformátuj datum jako řetězec tak, aby obsahovalo jen měsíc a den. Měsíc dej na začátek a za něj den - použij funkci strftime, kterou jsme spolu probírali
+  # Naformátovaný datum ulož do seznamu data
+
+data = pandas.DataFrame(data, columns=["Datum"])
+data = data.groupby("Datum").size()
