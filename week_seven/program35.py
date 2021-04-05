@@ -16,8 +16,8 @@ print(temperature_new)
 
 # Vytvoř krabicový graf a porovnej rozsah teplot v těchto městech.
 
-data = temperature_new['Helsinki'].to_frame(name='Helsinki')
-data['Miami Beach'] = temperature_new['Miami Beach']
-data['Tokyo'] = temperature_new['Tokyo']
+data = temperature_new['AvgTemperatureCelsia'].to_frame(name='Helsinki')
+data['Miami Beach'] = temperature_new['AvgTemperatureCelsia']
+data['Tokyo'] = temperature_new['AvgTemperatureCelsia']
 data.plot(kind='box', whis=[0, 100])
 plt.show()
