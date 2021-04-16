@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-^cgl$0cfcv15uy8a%9q6j%culczma6t-k9g0&6g*mo^a1jtr0x'
+SECRET_KEY = 'django-insecure-odh807!=mi=@p=-37smx*5f1jrwvol(px(yvukwfm&5oh68tyt'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'kurzy.apps.KurzyConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -50,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'katalog.urls'
+ROOT_URLCONF = 'pujcovna.urls'
 
 TEMPLATES = [
     {
@@ -68,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'katalog.wsgi.application'
+WSGI_APPLICATION = 'pujcovna.wsgi.application'
 
 
 # Database
