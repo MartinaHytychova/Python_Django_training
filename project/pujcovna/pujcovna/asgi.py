@@ -1,5 +1,5 @@
 """
-ASGI config for czechitas project.
+ASGI config for pujcovna project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
