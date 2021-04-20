@@ -1,0 +1,18 @@
+{% extends "../base.html" %}
+{% block content %}
+
+<h2>Seznam kurzů</h2>
+<p>Zde vidíte aktuální nabídku kurzů</p>
+<ul>
+    {% for kurz in object_list %}
+    <li>
+        <div>
+            <h3>{{ kurz.nazev }}</h3>
+            <p>cena je {{ kurz.cena }} Kč</p>
+            <p>kurz se koná {{ kurz.zacatek }}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

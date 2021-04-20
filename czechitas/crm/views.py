@@ -1,10 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.http import HttpResponse
-from django.views import View
+from django.views.generic import ListView
+from . import models
 
+class KontaktView(ListView):
+    model = models.Kontakt
+    template_name = "crm/kontakty_list.html"
 
-class MujDruhyPohled(View):
-    def get(self, request):
-        return HttpResponse('Toto je stránka budoucího crm!')
+class OrganizaceView(ListView):
+    model = models.Organizace
+    template_name = "crm/organizace_list.html"

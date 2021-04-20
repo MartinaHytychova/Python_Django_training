@@ -1,0 +1,18 @@
+{% extends "../base.html" %}
+{% block content %}
+
+<h2>Seznam kontaktů</h2>
+<p>Zde vidíte aktuální seznam kontaktů</p>
+<ul>
+    {% for kontakt in object_list %}
+    <li>
+        <div>
+            <p>{{ kontakt.jmeno }}</p>
+            <p>{{ kontakt.prijmeni }}</p>
+            <p>{{ kontakt.email }}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
