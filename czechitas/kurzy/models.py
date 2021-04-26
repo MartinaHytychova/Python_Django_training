@@ -13,5 +13,4 @@ class Kurz(models.Model):
   konec = models.DateTimeField()
   popis = models.CharField(max_length=1000)
   cena = models.IntegerField()
-  cena = models.IntegerField()
   kategorie = models.ForeignKey(Kategorie, on_delete=models.SET_NULL, null=True)

@@ -1,0 +1,20 @@
+{% extends "../base.html" %}
+{% block content %}
+    <table>
+        <tr>
+            <td>Jméno</td>
+            <td>Příjmení</td>
+            <td>Číslo řidičského průkazu</td>
+            <td>Datum narození</td>
+        </tr>
+        {% for zakaznik in object_list %}
+        <tr>
+            <td>{{ zakaznik.jmeno }}</td>
+            <td>{{ zakaznik.prijmeni }}</td>
+            <td>{{ zakaznik.cislo_prukazu }}</td>
+            <td>{{ zakaznik.datum_narozeni }}</td>
+            <td>{{ zakaznik.vratka }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

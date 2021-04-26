@@ -1,0 +1,21 @@
+{% extends "../base.html" %}
+{% block content %}
+    <table>
+        <tr>
+            <td>SPZ</td>
+            <td>Značka a typ vozu</td>
+            <td>Počet najetých kilometrů</td>
+            <td>stk</td>
+            <td>Od poslední stk uběhlo dnů</td>
+        </tr>
+        {% for auto in object_list %}
+        <tr>
+            <td>{{auto.registracni_znacka}}</td>
+            <td>{{auto.znacka_a_typ}}</td>
+            <td>{{auto.pocet_km}}</td>
+            <td>{{auto.datum_stk}}</td>
+            <td>{{auto.vuz}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

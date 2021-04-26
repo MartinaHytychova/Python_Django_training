@@ -1,0 +1,15 @@
+{% extends "../base.html" %}
+{% block content %}
+<ul>
+    {% for vypujcka in object_list %}
+        <li>Datum zapůjčení: {{ zaznam.pocatecni_datum_cas }},
+            datum a čas vrácení: {{ vypujcka.konecne_datum_cas }},
+            vypůjčený vůz: {{ vypujcka.vuz }},
+            cena: {{ vypujcka.cena }},
+            vráceno: {{ vypujcka.vratka }},
+        </li>
+    {% empty %}
+        <li>Nenalezen žádný záznam.</li>
+    {% endfor %}
+</ul>
+{% endblock %}
