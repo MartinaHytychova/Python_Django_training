@@ -19,7 +19,4 @@ from django.urls import include, path
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('katalog/', include("katalog.urls")),
-    path('katalog/auto/', include("katalog.urls")),
-    path('katalog/vypujcka/', include("katalog.urls")),
-    path('katalog/zakaznik/', include("katalog.urls"))
 ]
